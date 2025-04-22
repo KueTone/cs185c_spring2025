@@ -1,0 +1,24 @@
+
+# append to the data.exf file when using obcs
+# uncomment as needed
+
+ &EXF_NML_OBCS
+# obcsEstartdate1     = 19920101,
+# obcsEstartdate2     = 120000,
+# obcsEperiod         = 86400.0,
+#
+# obcsSstartdate1     = 19920101,
+# obcsSstartdate2     = 120000,
+# obcsSperiod         = 86400.0,
+#
+# obcsNstartdate1     = 19920101,
+# obcsNstartdate2     = 120000,
+# obcsNperiod         = 86400.0,
+#
+# obcsWstartdate1     = 19920101,
+# obcsWstartdate2     = 120000,
+# obcsWperiod         = 86400.0,
+#
+ useOBCSYearlyFields = .TRUE.,
+#
+ &

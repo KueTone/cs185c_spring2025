@@ -4,9 +4,10 @@ __pycache__/
 *$py.class
 
 # Data Files
-**/Data/
+Project/input/Data
 **/*.nc
 **/eccoseas/
+
 
 
 # C extensions
