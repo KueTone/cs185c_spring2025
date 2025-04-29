@@ -7,7 +7,8 @@ __pycache__/
 Project/input/Data
 **/*.nc
 **/eccoseas/
-
+Project/input/exf
+Project/input/obcs
 
 
 # C extensions
