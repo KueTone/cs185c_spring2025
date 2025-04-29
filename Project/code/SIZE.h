@@ -44,17 +44,18 @@ C     Nr  :: No. points in Z for full process domain.
       INTEGER Ny
       INTEGER Nr
       PARAMETER (
-     &           sNx =  30,
-     &           sNy =  204,
+     &           sNx =  300,
+     &           sNy =  12,
      &           OLx =   4,
      &           OLy =   4,
      &           nSx =   1,
      &           nSy =   1,
-     &           nPx =  10,
-     &           nPy =  1,
+     &           nPx =  1,
+     &           nPy =  17,
      &           Nx  = sNx*nSx*nPx,
      &           Ny  = sNy*nSy*nPy,
      &           Nr  =  50 )
+
 
 C     MAX_OLX :: Set to the maximum overlap region size of any array
 C     MAX_OLY    that will be exchanged. Controls the sizing of exch
