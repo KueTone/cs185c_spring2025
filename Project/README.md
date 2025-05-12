@@ -32,7 +32,9 @@ create a file system in the configurations folder of MITgcm
 - - - namelist
 - - - run
 to send data over to the Spartan cluster from my local computer to copy over the exf and obcs directories
-```scp exf/* [username]@spartan03.sjsu.edu:/scratch/[username]/MITgcm/configurations/coastal_philippines/input/exf```
+```scp exf/* cs185c10@spartan03.sjsu.edu:/scratch/cs185c10/MITgcm/configurations/coastal_philippines/input/exf```
+```scp obcs/* cs185c10@spartan03.sjsu.edu:/scratch/cs185c10/MITgcm/configurations/coastal_philippines/input/obcs```
+```scp *.bin cs185c10@spartan03.sjsu.edu:/scratch/cs185c10/MITgcm/configurations/coastal_philippines/input```
 
 copy over the namelist and code folder information from the github repo you cloned into coastal philippines
 (command below used while in the coastal philippines namelist folder)
@@ -44,7 +46,7 @@ activate the conda cs185c
 generate the build mitgcmuv
 ```
 cd build
-export MPI_HOME=/home/[username]/.conda/envs/cs185c
+export MPI_HOME=/home/cs185c10/.conda/envs/cs185c
 ../../../tools/genmake2 -of ../../../tools/build_options/linux_amd64_gfortran -mods ../code -mpi
 make depend
 make
@@ -79,3 +81,12 @@ change the ntasks to the # of CPU's used mentioned in the SIZE.h file
 #SBATCH --time=10:00:00
 export MPI_HOME=/home/[username]/.conda/envs/cs185c
 mpirun -np 2 ./mitgcmuv```
+
+to have plots side by side, 
+increase the plot width to 20 from 10, in the notebook
+copy and paste a section of code and lookup gridspec for more details. screenshots in phone.
+
+errors
+pot temp extreme
+- changed data deltaT from 300 to 90
+- data.obcs useOBCSprescribe to false
