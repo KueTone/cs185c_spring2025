@@ -7,8 +7,14 @@ __pycache__/
 Project/input/Data
 **/*.nc
 **/eccoseas/
-Project/input/exf
-Project/input/obcs
+Project/input/exf/*
+Project/input/obcs/*
+Project/input/1998/*
+Project/input/2011/*
+Project/run_1998/diags/*
+Project/run_2011/diags/*
+# Project/plots/panels_1998/*
+# Project/plots/panels_2011/*
 
 
 # C extensions
